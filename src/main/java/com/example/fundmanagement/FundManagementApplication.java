@@ -14,7 +14,7 @@ import java.util.List;
 public class FundManagementApplication {
 
     public static void main(String[] args) {
-
+        System.out.println("!!!!!!!!!!!!!!!!Hello World!!!!!!!!!!!!!!");
         SpringApplication.run(FundManagementApplication.class, args);
     }
 
