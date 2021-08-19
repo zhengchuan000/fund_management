@@ -8,8 +8,8 @@ services:
     image: fundmngmt/mysql:1.0.0
     ports:
       - "3306:3306"
-    # volumes:
-    #   - /docker/fundmngmt/mysql:/var/lib/mysql
+    volumes:
+      - /tmp/fund_management/mysql:/tmp/lib/mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD:
