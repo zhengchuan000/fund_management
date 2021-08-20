@@ -8,10 +8,10 @@ pipeline {
 
         stage('Build docker image') {
             steps {
-                // sh "docker stop fund_management/mysql "
-                // sh "docker stop fund_management/app"
-                // sh "docker rm fund_management/mysql"
-                // sh "docker rm fund_management/app"
+                sh "docker stop fund_management/mysql "
+                sh "docker stop fund_management/app"
+                sh "docker rm fund_management/mysql"
+                sh "docker rm fund_management/app"
                 sh "docker build -f Dockerfile-mysql -t fund_management/mysql ."
                 sh "docker build -f Dockerfile-app -t fund_management/app ."
                 sh "docker run --name mysql -d -p 3306:3306 fund_management/mysql"
