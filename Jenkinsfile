@@ -8,8 +8,8 @@ pipeline {
 
         stage('Build docker image') {
             steps {
-                sh "docker stop fund_management/mysql "
-                sh "docker stop fund_management/app"
+                // sh "docker stop fund_management/mysql "
+                // sh "docker stop fund_management/app"
                 // sh "docker rm fund_management/mysql"
                 // sh "docker rm fund_management/app"
                 // sh "fuser -k 3306"
